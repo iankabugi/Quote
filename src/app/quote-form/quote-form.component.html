@@ -1,18 +1,32 @@
 <div class='wells'>
 <form (ngSubmit)='plusquote()' #quoteForm='ngForm'>
-  Quote
-  <br>
+  <div class="form-group">
+    <label>Quote:</label>
+    <br>
+    
   <textarea name="" id="" cols="30" rows="10"  [(ngModel)]="newQuote.quoter" name="quoter" #quoter="ngModel" class="form-control"></textarea>
+  <div [hidden]="quoter.valid || quoter.pristine" class="alert alert-danger">
+      <p> quote is Required</p>
+      
+  </div>
+</div>
   {{newQuote.quoter}}
   <br>
-  Author
+  <div class="form-group">
+  <label>Author:</label>
   <br>
    <input type="text"  [(ngModel)]="newQuote.author" name="author" #author="ngModel" class="form-control" >
+   <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
+      <p> Name is Required</p>
+   </div>
+   </div>  
    <br>
-   Date
+   <div class="form-group">
+    <label>Date:</label>
+    <br>
+    <input type="date"  [(ngModel)]="newQuote.date" name="date" #date="ngModel"  class="form-control">
    <br>
-   <input type="date"  [(ngModel)]="newQuote.date" name="date" #date="ngModel"  class="form-control">
-   <br>
+   </div>
    <button type = "submit">Post Quote</button>
 </form>
 </div>
