@@ -1,6 +1,5 @@
 <p> Author :{{quote.author}}</p>
 <p> Date passed:{{quote.date|dateCount}}</p>
-<button (click)='add()'>Upvote{{upvote}}</button>
-<br>
-<button (click)='increase()'>Downvote{{downvote}}</button>
-<button (click)='quoteDelete(true)'>delete</button>
+<button class="btn-success" (click)='add()'>Upvote{{upvote}}</button>
+<button class="btn-info"(click)='increase()'>Downvote{{downvote}}</button>
+<button class="btn-danger"(click)='quoteDelete(true)'>delete</button>

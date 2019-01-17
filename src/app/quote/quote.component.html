@@ -2,7 +2,7 @@
 <header>A quote a day keeps the lazy brain awake</header>
 <li *ngFor='let quote of quotes;let i = index'>{{quote.number}}
 {{quote.quoter}} <br> 
-<button (click)="show(i)">Toggle</button>
+<button class="btn-primary" (click)="show(i)">Toggle</button>
 <app-quote-details *ngIf ='quote.showDetails' [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
 </li>
 <ul>
