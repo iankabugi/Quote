@@ -1,0 +1,18 @@
+<div class='wells'>
+<form (ngSubmit)='plusquote()' #quoteForm='ngForm'>
+  Quote
+  <br>
+  <textarea name="" id="" cols="30" rows="10"  [(ngModel)]="newQuote.quoter" name="quoter" #quoter="ngModel" class="form-control"></textarea>
+  {{newQuote.quoter}}
+  <br>
+  Author
+  <br>
+   <input type="text"  [(ngModel)]="newQuote.author" name="author" #author="ngModel" class="form-control" >
+   <br>
+   Date
+   <br>
+   <input type="date"  [(ngModel)]="newQuote.date" name="date" #date="ngModel"  class="form-control">
+   <br>
+   <button type = "submit">Post Quote</button>
+</form>
+</div>
