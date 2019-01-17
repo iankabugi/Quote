@@ -1,0 +1,10 @@
+<h1>QUOTES</h1>
+<header>A quote a day keeps the lazy brain awake</header>
+<li *ngFor='let quote of quotes;let i = index'>{{quote.number}}
+{{quote.quoter}} <br> 
+<button (click)="show(i)">Toggle</button>
+<app-quote-details *ngIf ='quote.showDetails' [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
+</li>
+<ul>
+<app-quote-form (addQuote)='submitQuote($event)'></app-quote-form>    
+  
