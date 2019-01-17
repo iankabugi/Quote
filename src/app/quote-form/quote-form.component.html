@@ -4,7 +4,7 @@
     <label>Quote:</label>
     <br>
     
-  <textarea name="" id="" cols="30" rows="10"  [(ngModel)]="newQuote.quoter" name="quoter" #quoter="ngModel" class="form-control"></textarea>
+  <textarea name="" id=""  rows="3"  [(ngModel)]="newQuote.quoter" name="quoter" #quoter="ngModel" class="form-control"></textarea>
   <div [hidden]="quoter.valid || quoter.pristine" class="alert alert-danger">
       <p> quote is Required</p>
       
