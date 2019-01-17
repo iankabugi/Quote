@@ -55,7 +55,7 @@ You can access the live project at **[Quote](https://iankabugi.github.io/Quote/)
 
 ## Support and contact details
 
-Have a question? Want to report a bug? feeling philanthropic? want to buy some beans? drop a suggestion or comment at karonjekevin67@gmail.com}
+Have a question? Want to report a bug? drop a suggestion or comment at iank299@gmail.com}
 
 ### License
 
